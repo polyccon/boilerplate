@@ -2,8 +2,6 @@ const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const controllers = require('./controllers/index');
-const cookieSession = require('cookie-session');
-const cookieParser = require('cookie-parser');
 
 const bodyParser = require('body-parser');
 require('env2')('config.env');
@@ -20,14 +18,13 @@ app.engine(
     partialsDir: path.join(__dirname, 'views', 'partials'),
     defaultLayout: 'main',
   }));
-  app.use(cookieSession({
-    name: 'session',
-    secret: process.env.SESSION_SECRET,
-    // the session will last for three days
-    maxAge: 24 * 60 * 60 * 1000 * 3,
-  }));
 
-  app.use(cookieParser());
+  app.use(function (req, res, next) {
+     console.log('Time:', Date.now());
+     next();
+  });
+
+app.get('/home', controllers);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
