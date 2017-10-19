@@ -28,7 +28,9 @@
     "express-handlebars": "^3.0.0",
     "path": "^0.12.7",
     "pg": "^7.3.0",
-    "tachyons": "^4.8.1"
+    "pg-promise": "^7.0.2",
+    "tachyons": "^4.8.1",
+    "tachyons-custom": "^4.6.0"
   },
   "devDependencies": {
     "nodemon": "^1.12.1",
