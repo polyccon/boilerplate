@@ -2,9 +2,11 @@ const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const controllers = require('./controllers/index');
-
 const bodyParser = require('body-parser');
 require('env2')('config.env');
+
+const cookieSession = require('cookie-session');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 
@@ -24,6 +26,13 @@ app.engine(
      next();
   });
 
+  app.use(cookieSession({
+    name: 'session',
+    secret: process.env.SESSION_SECRET,
+    // the session will last for three days
+    maxAge: 24 * 60 * 60 * 1000 * 3,
+  }));
+  
 app.get('/home', controllers);
 
 app.use(bodyParser.json());
