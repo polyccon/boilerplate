@@ -8,7 +8,7 @@
  * __Postgress database using the pg-promise module__
  * __Nodemon for running the server locally__
 
-
+***
 
 To run the project locally you need to do the following:
 * Clone the repository
