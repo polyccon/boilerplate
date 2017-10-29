@@ -1,6 +1,6 @@
 # Boilerplate
 
-#### Making a boilerplate for a web applications can save a lot of time. In this one you will find the following technologies:
+The idea behind a boilerplate for a web applications, is that it can save a lot of valuable time from setting up a new work environment every time. In this one you will find the following technologies:
 
  * __Expess and express-handlebars__
  * __Middleware: body-parser__
