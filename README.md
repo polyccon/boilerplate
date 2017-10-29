@@ -1,12 +1,12 @@
 # Boilerplate
 
-## This is a boilerplate for a web app that will require the following technologies:
+## Making a boilerplate for a web applications can save a lot of time. In this one you will find the following technologies:
 
-### * Expess and express-handlebars
-### * Middleware: body-parser
-### * Testing with tape, supertest, tap-spec and nyc
-### * Postgress database using the pg-promise module
-### * Nodemon for running the server locally
+ * __Expess and express-handlebars
+ * Middleware: body-parser
+ * Testing with tape, supertest, tap-spec and nyc
+ * Postgress database using the pg-promise module
+ * Nodemon for running the server locally__
 
 * To run the project locally you need to do the following:
 * Clone the repository
