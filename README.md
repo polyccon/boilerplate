@@ -12,5 +12,6 @@
 To run the project locally you need to do the following:
 * Clone the repository
 * Cd into it
-* Run the command: npm run devStart in your terminal
+* Run the command: npm i, in your terminal
+* Run the command: npm run devStart
 * Open localhost:4001 in your browser
