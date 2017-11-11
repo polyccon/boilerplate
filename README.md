@@ -13,6 +13,6 @@ The idea behind a boilerplate for a web applications, is that it can save a lot 
 To run the project locally you need to do the following:
 * Clone the repository
 * Cd into it
-* Run the command: npm i, in your terminal
-* Run the command: npm run devStart
-* Open localhost:4001 in your browser
+* Run the command: ```npm i```, in your terminal
+* Run the command: ```npm run devStart```
+* Open ```localhost:4001``` in your browser
