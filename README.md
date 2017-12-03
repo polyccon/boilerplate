@@ -1,15 +1,18 @@
 # Boilerplate
 
-## This is a boilerplate for a web app that will require the following technologies:
+The idea behind a boilerplate for a web applications, it can save a lot of valuable time from setting up a new work environment every time. In this one you will find the following technologies already set up:
 
-### * Expess and express-handlebars
-### * Middleware: body-parser
-### * Testing with tape, supertest, tap-spec and nyc
-### * Postgress database using the pg-promise module
-### * Nodemon for running the server locally
+ * __Expess__ and __express-handlebars__
+ * Middleware: __body-parser__
+ * Testing with __tape, supertest, tap-spec and nyc__
+ * __Postgress__ database using the __pg-promise module__
+ * __Nodemon__ for running the server locally
 
-* To run the project locally you need to do the following:
+***
+
+To run the project locally you need to do the following:
 * Clone the repository
 * Cd into it
-* Run the command: npm run devStart in your terminal
-* Open localhost:4001 in your browser
+* Run the command: ```npm i```, in your terminal
+* Run the command: ```npm run devStart```
+* Open ```localhost:4001``` in your browser
