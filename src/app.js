@@ -17,19 +17,16 @@ app.engine(
     layoutsDir: path.join(__dirname, 'views', 'layouts'),
     partialsDir: path.join(__dirname, 'views', 'partials'),
     defaultLayout: 'main',
-  }));
+  })
+);
 
-  app.use(function (req, res, next) {
-     console.log('Time:', Date.now());
-     next();
-  });
+app.use(function(req, res, next) {
+  console.log('Time:', Date.now());
+  next();
+});
 
-app.get('/home', controllers);
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '..', 'public')));
-
 app.use(controllers);
 
 module.exports = app;
